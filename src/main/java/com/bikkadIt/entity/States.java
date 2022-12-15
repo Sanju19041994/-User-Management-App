@@ -5,9 +5,20 @@ import javax.persistence.Entity;
 import javax.persistence.Id;
 import javax.persistence.Table;
 
+import lombok.AllArgsConstructor;
+import lombok.Getter;
+import lombok.NoArgsConstructor;
+import lombok.Setter;
+import lombok.ToString;
+
 @Entity
-@Table(name = "STATE_DETAILS")
-public class STATES_MASTER {
+@Table(name = "STATES_MASTER")
+@Getter
+@Setter
+@NoArgsConstructor
+@AllArgsConstructor
+@ToString
+public class States {
 	
 	@Id
 	@Column(name = "STATE_ID")
